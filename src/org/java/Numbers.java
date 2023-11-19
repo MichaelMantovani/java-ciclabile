@@ -6,6 +6,7 @@ public class Numbers {
 	private int[] numbers;
 	private int index = 0;
 
+	public Numbers() {};
 	public Numbers(int[] numbers) {
 		setNumbers(numbers);
 	}
@@ -34,6 +35,13 @@ public class Numbers {
 	public boolean hasAncoraElementi(){
 		return !(this.index != this.numbers.length - 1);
 		}
+	
+	public void addElemento(int element) {
+	    
+	    int[] numbers = Arrays.copyOf(this.numbers, this.numbers.length + 1);
+	    numbers[this.numbers.length] = element;
+	    this.numbers = numbers;
+	}
 	
 	@Override
 	public String toString() {

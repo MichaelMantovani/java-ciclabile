@@ -19,5 +19,9 @@ public class Main {
 		
 		System.out.println(numbers.hasAncoraElementi());
 		
+		
+		numbers.addElemento(4);
+		System.out.println(numbers);
+		
 	}
 }
