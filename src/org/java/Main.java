@@ -13,12 +13,11 @@ public class Main {
 		
 		System.out.println(numbers.getElementoSuccessivo());
 		
+		System.out.println(numbers.hasAncoraElementi());
+
 		System.out.println(numbers.getElementoSuccessivo());
 		
-		System.out.println(numbers.getElementoSuccessivo());
+		System.out.println(numbers.hasAncoraElementi());
 		
-		System.out.println(numbers.getElementoSuccessivo());
-		
-		System.out.println(numbers.getElementoSuccessivo());
 	}
 }

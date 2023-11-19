@@ -21,6 +21,7 @@ public class Numbers {
 	public int getElementoSuccessivo() {
 		int currentNumber = 0;
 		if (this.index == this.numbers.length - 1) {
+			System.out.print("Questo è l'ultimo elemento. Il prossimo sarà di nuovo il primo: ");
 			currentNumber = this.numbers[this.index];
 			this.index = 0;
 		} else {
@@ -29,6 +30,10 @@ public class Numbers {
 		} 
 		return currentNumber;
 	}
+	
+	public boolean hasAncoraElementi(){
+		return !(this.index != this.numbers.length - 1);
+		}
 	
 	@Override
 	public String toString() {
